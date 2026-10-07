@@ -1,0 +1,14 @@
+[project]
+name = "config-file-locator"
+version = "0.1.0"
+description = "Searches upward from a starting path for a named config file and returns the first match."
+requires-python = ">=3.10"
+dependencies = []
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
