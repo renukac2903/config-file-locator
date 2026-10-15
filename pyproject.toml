@@ -1,6 +1,6 @@
 [project]
 name = "config-file-locator"
-version = "0.1.0"
+version = "0.1.1"
 description = "Searches upward from a starting path for a named config file and returns the first match."
 requires-python = ">=3.10"
 dependencies = []
