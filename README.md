@@ -34,3 +34,10 @@ result yourself; that is a separate problem.
 - An empty filename returns `None` rather than raising.
 - The start path is resolved (symlinks followed) before walking, so the search
   follows the physical ancestry of the resolved path, not the lexical one.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
